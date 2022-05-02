@@ -1,0 +1,39 @@
+.auth_body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth_cont{
+    background-color: white;
+    border-radius: 15px;
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-width: 30vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .auth_cont{
+        min-width:70vw
+    }
+  
+}
+
+@media only screen and (min-width: 601px) and (max-width: 700px) {
+
+    .auth_cont{
+        min-width:60vw
+    }
+  
+}
+
+@media only screen and (min-width: 701px) and (max-width: 800px) {
+
+    .auth_cont{
+        min-width:50vw
+    }
+  
+}

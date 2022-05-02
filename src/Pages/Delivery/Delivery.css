@@ -1,0 +1,39 @@
+.delivery_grid{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    gap: 10px;
+}
+.delivery_card{
+    display: flex;
+    box-shadow: #00000026 2px 2px 10px;
+    align-items: center;
+    border-radius: 15px;
+    padding: 3%;
+    justify-content: space-around;
+    border: 2px solid white;
+    transition: .3s;
+}
+
+.delivery_card:hover{
+    cursor: pointer;
+    border: 2px rgb(255, 168, 77) solid;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .delivery_grid{
+        grid-template-columns: 100%;
+    }
+    
+
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .delivery_grid{
+        grid-template-columns: 45% 45%;
+    }
+    
+
+}

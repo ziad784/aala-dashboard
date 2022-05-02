@@ -1,0 +1,40 @@
+.sidebar_cont{
+    height: 100%;
+   
+ 
+}
+.sidebar_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 3%;
+}
+
+
+.sidebar_list:first-child{
+    margin-top: 5vh;
+}
+
+.sidebar_list > li > a{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 4%;
+    font-size: 18px;
+    transition: .3s;
+
+
+}
+
+.sidebar_list > li:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.226);
+    border-radius: 10px;
+}
+
+.focused{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.226);
+    border-radius: 10px;
+}

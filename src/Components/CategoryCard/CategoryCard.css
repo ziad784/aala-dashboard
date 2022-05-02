@@ -1,0 +1,21 @@
+.cate_img > img{
+    width: 180px;
+    height: 180px;
+}
+
+.cate_cont{
+    background-color: #ebebeb;
+    width: fit-content;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.cate_tit{
+    font-size: 25px;
+}
+
+.cate_sub{
+    font-size: 17px;
+    color: rgb(255, 165, 68);
+}

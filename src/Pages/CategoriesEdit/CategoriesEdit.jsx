@@ -13,7 +13,8 @@ function CategoriesEdit() {
             <div style={{width:"30%",padding:"2%"}}>
             <Input txt={"اسم القسم"} type={"text"} value={"ملابس النساء"} />
             <Input txt={"الكلمة الثانية"} type={"text"} value={"أزياء رائعة للنساء"} />
-            <Button txt={"حفظ"} color={"#101010"} width={"90%"} />
+            <Button txt={"حفظ"} color={"#101010"} width={"90%"} padding={"3%"}/>
+            <Button txt={"حذف"} color={"#ff0000"} width={"90%"} padding={"3%"} />
 
             </div>
         </div>

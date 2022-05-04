@@ -16,7 +16,8 @@ function DeliveryEdit() {
         <div style={{width:"30%",padding:"2%"}}>
             <Input txt={"السعر"} type={"number"} value={5} />
 
-            <Button txt={"حفظ"} color={"#101010"} width={"90%"} />
+            <Button txt={"حفظ"} color={"#101010"} width={"90%"} padding={"3%"}/>
+            <Button txt={"حذف"} color={"#ff0000"} width={"90%"} padding={"3%"} />
 
             </div>
             

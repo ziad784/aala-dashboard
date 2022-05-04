@@ -2,10 +2,12 @@ import React from 'react'
 import Button from '../Button/Button'
 import './CategoryCard.css'
 import {Link} from 'react-router-dom'
+import {FaTimes} from 'react-icons/fa'
 
 function CategoryCard({title,subtitle,pic}) {
   return (
     <div className='flex cate_cont'>
+  
               <div className='cate_info'>
             <div className='cate_tit'>{title}</div>
             <div className='cate_sub'>{subtitle}</div>

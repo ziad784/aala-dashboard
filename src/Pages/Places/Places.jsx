@@ -29,6 +29,10 @@ function Places() {
             <div style={{width:"20%"}}>
                 <Button txt={"تعديل"} color={"rgb(255, 165, 68)"} width={"100%"} />
             </div>
+
+            <div style={{width:"20%"}}>
+                <Button txt={"اضافة"} color={"#101010"} width={"100%"} />
+            </div>
             <div style={{width:"20%"}}>
                 <Button txt={"حذف"} color={"#ff0000"} width={"100%"} />
             </div>

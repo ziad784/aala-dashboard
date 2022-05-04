@@ -7,6 +7,7 @@ import women from '../../../imgs/women.png'
 import kid from '../../../imgs/boy.png'
 import './Categories.css'
 import Button from '../../Components/Button/Button'
+import {Link} from 'react-router-dom';
 
 function Categories() {
   return (
@@ -20,8 +21,13 @@ function Categories() {
       
     <div style={{flex:4}}>
       <Header />
+      <Link to={"/categories/add"}>
+        <div style={{display:"flex",justifyContent:"flex-end",paddingRight:"10px",paddingBottom:"20px"}}>
+          
+          <Button txt={"اضافة"} color={"#101010"} width={"15%"} padding={"1%"} margin={"inherit"} />
 
- 
+        </div>
+        </Link>
        
         <div className=" cates_grid">
             <CategoryCard title={"ملابس الرجال"} subtitle={"أزياء رائعة للرجال"} pic={men} />

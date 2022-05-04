@@ -18,7 +18,9 @@ function UsersEdit() {
             <Input txt={"رقم الهاتف"} type={"number"} value={"0780997333"} />
             <Input txt={"المحافظة"} type={"text"} value={"عمان"} />
 
-            <Button txt={"حفظ"} color={"#101010"} width={"90%"} />
+            
+            <Button txt={"حفظ"} color={"#101010"} width={"90%"} padding={"3%"}/>
+            <Button txt={"حذف"} color={"#ff0000"} width={"90%"} padding={"3%"} />
 
             </div>
             

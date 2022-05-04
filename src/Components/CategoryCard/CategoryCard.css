@@ -9,6 +9,7 @@
     align-items: center;
     padding: 15px;
     border-radius: 15px;
+    position: relative;
 }
 
 .cate_tit{

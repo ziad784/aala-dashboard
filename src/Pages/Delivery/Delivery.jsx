@@ -6,6 +6,7 @@ import DPD from '../../../imgs/DPD.png'
 import fedex from '../../../imgs/fedex.png'
 import {Link} from 'react-router-dom'
 import './Delivery.css'
+import Button from '../../Components/Button/Button'
 
 function Delivery() {
   return (
@@ -19,6 +20,14 @@ function Delivery() {
     <div style={{flex:4}}>
       <Header />
 
+
+      <Link to={"/delivery/add"}>
+        <div style={{display:"flex",justifyContent:"flex-end",paddingRight:"10px",paddingBottom:"20px"}}>
+          
+          <Button txt={"اضافة"} color={"#101010"} width={"15%"} padding={"1%"} margin={"inherit"} />
+
+        </div>
+        </Link>
  
        
         <div className=" delivery_grid">

@@ -39,8 +39,11 @@ function Login() {
       }else if(data.res === "ok"){
 
         localStorage.setItem("DashToken",data.token)
+        window.location.reload()
         setTimeout(() => {
-          window.location.reload()
+          Navigate("/",{
+            replace:true
+          })
           
         }, 500);
 

@@ -24,7 +24,7 @@ function Login() {
       })
     })
     .then((res) => res.json())
-    .then(async (data) =>{
+    .then((data) =>{
 
       if(data.res === "bad"){
         const login_form = document.getElementById("login_form");
@@ -38,14 +38,9 @@ function Login() {
 
       }else if(data.res === "ok"){
 
-         localStorage.setItem("DashToken",data.token)
-        
-        setTimeout(() => {
-          Navigate("/",{
-            replace:true
-          })
-          
-        }, 500);
+        localStorage.setItem("DashToken",data.token)
+        location.reload()
+      
 
       }
     })

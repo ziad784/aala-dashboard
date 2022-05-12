@@ -51,9 +51,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route element={<PortectedLogin islogin={islogin} />}>
+        
           <Route path='/login' element={<Login/>} />
-        </Route>
+       
 
        
         <Route element={<PortectedRoutes islogin={islogin} />}>

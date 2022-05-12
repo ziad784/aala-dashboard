@@ -28,11 +28,28 @@ function Items() {
         </div>
         </Link>
 
-      <div className="body items_grid">
-          <Item title={"اسم المنتج"} link={"/items/edit"} price={"5"} pic={item_img} />
-          <Item title={"اسم المنتج"} link={"/items/edit"} price={"5"} pic={item_img} />
-          <Item title={"اسم المنتج"} link={"/items/edit"} price={"5"} pic={item_img} />
-          <Item title={"اسم المنتج"} link={"/items/edit"} price={"5"} pic={item_img} />
+      <div className="body ">
+
+        <table>
+          <thead>
+              <tr>
+                <th>الصورة</th>
+                <th>اسم المنتج</th>
+                <th>السعر</th>
+              </tr>
+            </thead>
+
+
+            <tbody>
+              <tr className='item'>
+                <td><img width={100} height={100} src={item_img} alt="pic" style={{objectFit:"contain"}} /></td>
+                <td>اسم المنتج</td>
+                <td>10</td>
+                <td><Link to={"/items/edit/"}><button >تعديل</button></Link></td>
+              </tr>
+            </tbody>
+
+        </table>
 
 
 

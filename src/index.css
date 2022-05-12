@@ -6,6 +6,47 @@
 
 }
 
+table{
+  width: 97%;
+  border-collapse: separate;
+  margin: auto;
+  border-spacing: 0 15px;
+
+  
+ 
+  
+}
+
+td, th {
+
+  text-align: left;
+  padding: 8px;
+
+
+}
+
+
+
+.item{
+  background-color: rgba(223, 223, 223, 0.247);
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+.item > td > a > button,.item > td > button{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #101010;
+  color: white;
+  transition: .3s;
+}
+
+.item > td > a > button:hover,.item > td > button:hover{
+  opacity: .7;
+}
+
 ul{
   list-style: none;
 }
@@ -27,6 +68,30 @@ a{
   display: none;
 }
 
+
+
+.err{
+  color: red;
+  font-weight: 500;
+}
+
+.show_err_anim{
+  transition: .3s;
+  animation:show_err_anim .5s ease-in-out forwards ;
+}
+
+@keyframes show_err_anim {
+  from{
+    font-size: 5px;
+    opacity: 0;
+  }
+  to{
+    font-size: 17px;
+    opacity: 1;
+  }
+  
+}
+
 @media only screen and (max-width: 900px) {
   .sidebar_cont{
     
@@ -42,3 +107,4 @@ a{
   }
 
 }
+

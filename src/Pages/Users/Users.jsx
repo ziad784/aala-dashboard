@@ -29,12 +29,30 @@ function Users() {
         </div>
         </Link>
        
-        <div className=" users_grid">
+        <div className=" body">
 
-            <Profile title={"حلزوم ابراهيم"} pic={profile} />
-            <Profile title={"حلزوم ابراهيم"} pic={profile} />
-            <Profile title={"حلزوم ابراهيم"} pic={profile} />
-            <Profile title={"حلزوم ابراهيم"} pic={profile} />
+
+          <table>
+            <thead>
+              <tr >
+                <th>الصورة</th>
+                <th style={{width:"70%"}}>الاسم</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr className='item'>
+                <td><img width={100} height={100} src={profile} alt="pic" style={{objectFit:"contain"}} /></td>
+                <td>حزلوم</td>
+                <td><Link to={"/users/edit"}><button >تعديل</button></Link></td>
+              </tr>
+            </tbody>
+
+
+
+          </table>
+
+
 
 
         </div>

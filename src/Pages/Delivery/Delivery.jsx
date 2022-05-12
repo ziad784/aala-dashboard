@@ -21,54 +21,30 @@ function Delivery() {
       <Header />
 
 
-      <Link to={"/delivery/add"}>
-        <div style={{display:"flex",justifyContent:"flex-end",paddingRight:"10px",paddingBottom:"20px"}}>
-          
-          <Button txt={"اضافة"} color={"#101010"} width={"15%"} padding={"1%"} margin={"inherit"} />
-
-        </div>
-        </Link>
+   
  
        
-        <div className=" delivery_grid">
+        <div className='body'>
 
-            <Link to={"/delivery/edit"}>
-            <div className="delivery_card">
-                <div>
-                    <div>رسوم التوصيل</div>
-                    <div style={{color:"rgb(255, 168, 77)"}}>3 د.ا</div>
-                </div>
-                <div>
-                    <img src={aramax} alt="aramax img" width={120} height={120} />
-                </div>
-            </div>
-            
-            </Link>
+            <table>
+                <thead>
+                    <tr>
+                        <th>الصورة</th>
+                        <th>اسم الشركة</th>
+                    </tr>
+                </thead>
 
-            <Link to={"/delivery/edit"}>
-            <div className="delivery_card">
-                <div>
-                    <div>رسوم التوصيل</div>
-                    <div style={{color:"rgb(255, 168, 77)"}}>3 د.ا</div>
-                </div>
-                <div>
-                    <img src={DPD} alt="DPD img" style={{objectFit:"contain"}} width={120} height={120} />
-                </div>
-            </div>
-            </Link>
+                <tbody>
+                    <tr className='item'>
+                        <td><img width={100} height={100} src={aramax} alt="pic" style={{objectFit:"contain"}} /></td>
+                        <td>ارامكس</td>
+                        <td><Link to={"/delivery/edit/"}><button >تعديل</button></Link></td>
+                    </tr>
+                </tbody>
 
-            <Link to={"/delivery/edit"}>
-            <div className="delivery_card">
-                <div>
-                    <div>رسوم التوصيل</div>
-                    <div style={{color:"rgb(255, 168, 77)"}}>3 د.ا</div>
-                </div>
-                <div>
-                    <img src={fedex} alt="fedex img" style={{objectFit:"contain"}} width={120} height={120} />
-                </div>
-            </div>
+            </table>
 
-            </Link>
+
 
 
 

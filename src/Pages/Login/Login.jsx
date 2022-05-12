@@ -11,6 +11,8 @@ function Login() {
 
   const Navigate = useNavigate()
 
+  
+
 
   const LoginHandler = () =>{
     fetch("http://localhost:3001/loginDash",{
@@ -37,7 +39,7 @@ function Login() {
       }else if(data.res === "ok"){
 
         localStorage.setItem("DashToken",data.token)
-        window.location.reload()
+        Navigate(0)
 
       }
     })
